@@ -1,0 +1,126 @@
+@font-face {
+    font-family: HyliaSerif;
+    src: url(../font/HyliaSerif.otf);
+}
+
+div {
+    font-family: 'HyliaSerif', sans-serif;
+}
+
+body {
+    background-image: url("https://i.imgur.com/5wdlie7.jpeg");
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'HyliaSerif', sans-serif;
+    font-size: 4.5em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    padding-top: 3vh;
+    text-align: center;
+    height: 18vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://external-preview.redd.it/9Enzn9tzmnNSRturLNyWm3_auqy74mcRYbbTdxoJqdk.jpg?auto=webp&s=30bcb2ef72e81ed10118dbeed1ba63ec39f5a3f0");
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #9A0910;
+    font-family: 'HyliaSerif', sans-serif;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #9A0910;
+    font-family: 'HyliaSerif', sans-serif;
+}
+
+#playing-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.playing-card {
+    margin: 5px;
+    width: 200px;
+}
+
+input, button {
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+#alert {
+    text-align: center;
+}
+
+#alert button {
+    width: 75px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    width: 205px;
+    background-color: #181818;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid #9A0910;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="get"] {
+    width: 205px;
+    background-color: #181818;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid #9A0910;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=get]:hover {
+    background-color: #9A0910;
+    font-weight: bold;
+}
+
+
+input[type=submit]:hover {
+    background-color: #9A0910;
+    font-weight: bold;
+}
+
+input[type="text"] {
+
+}
+
+.bigZoom {
+    transition: .1s ease-in-out;
+}
+
+.bigZoom:hover {
+    transform: scale(1.5);
+}
+
+.smallZoom {
+    transition: .1s ease-in-out;
+}
+
+.smallZoom:hover {
+    transform: scale(1.1);
+}
