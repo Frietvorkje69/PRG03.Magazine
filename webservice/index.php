@@ -6,7 +6,7 @@ require_once "includes/actions.php";
 if (!isset($_GET['id'])) {
     $data = getZelda();
 } else {
-    $data = getZeldaDetails($_GET['id']);
+    return;
 }
 
 //Set the header & output JSON so the client will know what to expect.

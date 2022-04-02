@@ -8,74 +8,172 @@ function getZelda()
         [
             "id" => 1,
             "name" => "Breath of the Wild",
-            "console" => "Nintendo Switch",
-            "image" => "../../img/resources/botw.png",
-            "quote" => "The reinventor of the open world",
-            "tags" => ['Open World', 'Adventure']
+            "console" => ['WiiU', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/botw.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "The reinventor of the open world genre.",
         ],
         [
             "id" => 2,
             "name" => "Ocarina of Time",
-            "console" => "Nintendo 64",
-            "image" => "../../img/resources/oot.png",
+            "console" => ['Nintendo 64', 'GameCube', 'Wii', '3DS', 'WiiU', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/oot.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
             "quote" => "Time travel to save Hyrule from certain doom.",
-            "tags" => ['Mask', 'healthy']
         ],
         [
             "id" => 3,
-            "name" => "Majoras Mask",
-            "console" => "Nintendo 64",
-            "image" => "../../img/resources/mm.png",
+            "name" => "Majora's Mask",
+            "console" => ['Nintendo 64', 'GameCube', 'Wii', '3DS', 'WiiU', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/mm.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
             "quote" => "Fight a creepy mask that plagues Termina!",
-            "tags" => ['psychological horror', 'adventure']
         ],
         [
             "id" => 4,
-            "name" => "Links Awakening",
-            "console" => "GameBoy",
-            "image" => "../../img/resources/la.png",
+            "name" => "Link's Awakening",
+            "console" => ['Gameboy', 'Gameboy Colour', '3DS', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/la.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
             "quote" => "Wake up, that's it just wake up it's that easy.",
-            "tags" => ['phylosofical', 'adventure']
         ],
         [
             "id" => 5,
             "name" => "A Link to the Past",
-            "console" => "Super Nintendo Entertainment System",
-            "image" => "../../img/resources/lttp.png",
+            "console" => ['SNES', 'GBA', 'Wii', '3DS', 'WiiU', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/lttp.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
             "quote" => "Travel to a dark version of Hyrule!",
-            "tags" => ['Time travel']
+        ],
+        [
+            "id" => 6,
+            "name" => "The Legend of Zelda",
+            "console" => ['NES', 'SNES', 'Wii', '3DS', 'Wii U', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/zelda1.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "You better have that guidebook on hand.",
+        ],
+        [
+            "id" => 7,
+            "name" => "The Legend of Zelda II",
+            "console" => ['NES', 'SNES', 'Wii', '3DS', 'Wii U', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/zelda2.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "I AM BUG.",
+        ],
+        [
+            "id" => 8,
+            "name" => "Wind Waker",
+            "console" => ['GameCube', 'Wii U'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/ww.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "hmm cartoon boy make wind go brrr!",
+        ],
+        [
+            "id" => 9,
+            "name" => "Twilight Princess",
+            "console" => ['GameCube', 'Wii', 'Wii U'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/tp.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Still a better love story than twilight.",
+        ],
+        [
+            "id" => 10,
+            "name" => "Crossbow Training",
+            "console" => ['Wii'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/crossbow.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Absolute masterpiece.",
+        ],
+        [
+            "id" => 11,
+            "name" => "Skyward Sword",
+            "console" => ['Wii', 'Wii U', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/ss.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "I hope you like motion controls.",
+        ],
+        [
+            "id" => 12,
+            "name" => "Minish Cap",
+            "console" => ['GBA', '3DS', 'WiiU'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/minish.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "reject big boi, become small :)",
+        ],
+        [
+            "id" => 13,
+            "name" => "Link between Worlds",
+            "console" => ['3DS'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/lbw.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "A Link to the Past, but not A Link to the Past and different.",
+        ],
+        [
+            "id" => 14,
+            "name" => "Triforce Heroes",
+            "console" => ['3DS'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/triforce.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Funny crossdressing co-op game!",
+        ],
+        [
+            "id" => 15,
+            "name" => "Four Swords",
+            "console" => ['GameCube'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/4s.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "The better co-op game, minus the crossdressing.",
+        ],
+        [
+            "id" => 16,
+            "name" => "Phantom Hourglass",
+            "console" => ['DS'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/ph.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Wind Waker but not that good.",
+        ],
+        [
+            "id" => 17,
+            "name" => "Spirit Tracks",
+            "console" => ['DS'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/st.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Phantom Hourglass but better and with trains.",
+        ],
+        [
+            "id" => 18,
+            "name" => "Hyrule Warriors",
+            "console" => ['Wii U', '3DS', 'Nintendo Switch'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/hw.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Zelda: Fanservice the Game.",
+        ],
+        [
+            "id" => 19,
+            "name" => "The Faces of Evil",
+            "console" => ['CD-i'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/cdi.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "Lamp Oil, Rope, Bombs? You want it? It's yours, my friend.
+            As long as you have enough rupees. Sorry, Link.
+            I can't give credit! Come back when you're a little... MMMMMMM... Richer!",
+        ],
+        [
+            "id" => 20,
+            "name" => "Rosy Rupeeland",
+            "console" => ['DS'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/tingle.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "???",
+        ],
+        [
+            "id" => 21,
+            "name" => "Sonic Lost World",
+            "console" => ['WiiU'],
+            "image" => "http://localhost/THE03.Magazine/img/resources/sonic.png",
+            "image2" => "http://localhost/THE03.Magazine/img/resources/error.png",
+            "quote" => "I don't think this counts..",
         ]
     ];
-}
-
-/**
- * @param $id
- * @return mixed
- */
-function getZeldaDetails($id)
-{
-    $tags = [
-        1 => [
-            "quote" => "The reinventor of the open world",
-            "tags" => ['Open World', 'Adventure']
-        ],
-        2 => [
-            "quote" => "Time travel to save Hyrule from certain doom.",
-            "tags" => ['Mask', 'healthy']
-        ],
-        3 => [
-            "quote" => "Fight a creepy mask that plagues Termina!",
-            "tags" => ['psychological horror', 'adventure']
-        ],
-        4 => [
-            "quote" => "Wake up, that's it just wake up it's that easy.",
-            "tags" => ['phylosofical', 'adventure']
-        ],
-        5 => [
-            "quote" => "Travel to a dark version of Hyrule!",
-            "tags" => ['Time travel']
-        ],
-    ];
-
-    return $tags[$id];
 }
