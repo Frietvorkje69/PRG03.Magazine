@@ -49,8 +49,12 @@ body {
     transition: 0.3s;
 }
 
-.zelda-card .favourite{
+.zelda-card .favourite {
     background-color: cornflowerblue;
+}
+
+.zelda-card .favourite:hover {
+    background-color: #5984D4;
 }
 
 .zelda-card:hover {
@@ -141,7 +145,7 @@ body {
 }
 
 .modal-content h3 {
-width: 500px;
+    width: 500px;
 }
 
 .modal-content img {
