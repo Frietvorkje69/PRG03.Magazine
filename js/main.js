@@ -2,7 +2,7 @@ window.addEventListener('load', init);
 
 //Global VARS
 let apiUrl = 'http://localhost/THE03.Magazine/webservice';
-let favourite;
+let favouriteBTN;
 let favourites = JSON.parse(localStorage.getItem('favourites')) || [];
 let button;
 let zeldaGallery;
@@ -72,43 +72,40 @@ function createZeldaGallery(data) {
         zeldaCard.appendChild(description)
 
         //Favourite button for the Zelda Game
-        favourite = document.createElement('button');
-        favourite.innerHTML = "Add to favourites";
-        favourite.classList.add('favourite-btn')
+        faveButton = document.createElement('button');
+        faveButton.innerHTML = "Add to favourites";
+        faveButton.classList.add('favourite-btn')
         //Check if listed game is already added to favourites in local storage
         for (let id of favourites) {
-            console.log(`${id}, ${zeldaData.id}`)
-            //werkt alleen met  ==, niet met === WAAROM???
+            //The following IF-statement only works with double == because of differing types of content
             if (id == zeldaData.id) {
                 zeldaCard.classList.add("fave");
-                favourite.classList.add("favourite");
-                favourite.innerHTML = "Favourited";
+                faveButton.classList.add("favourite");
+                faveButton.innerHTML = "Favourited";
             } else {
             }
         }
-        favourite.dataset.id = zeldaData.id;
-        zeldaCard.appendChild(favourite)
+        faveButton.dataset.id = zeldaData.id;
+        zeldaCard.appendChild(faveButton)
 
         zeldaDatabase[zeldaData.id] = zeldaData
     }
 }
 
-//Listens to click events on 'fave' btn
+//Listens to click events on 'fave' button
 function faveClickHandler(e) {
     let target = e.target;
 
     if (target.nodeName === 'BUTTON') {
         if (target.classList.contains("favourite")) {
-            console.log('favourite removed')
             removeFave(target);
         } else if (target.className === "favourite-btn") {
-            console.log('favourite added')
             addFave(target)
         }
     }
 }
 
-//Listens to click events on 'desc' btn
+//Listens to click events on 'desc' button
 function descClickHandler(e) {
     let target = e.target;
     if (target.className !== 'view-description') {
@@ -117,7 +114,7 @@ function descClickHandler(e) {
     showModal(target)
 }
 
-//Listens to click events on modal close btn
+//Listens to click events on modal close button
 function modalClickHandler(e) {
     let target = e.target;
     if (target.id === 'modal-close') {
