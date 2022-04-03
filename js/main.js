@@ -2,8 +2,8 @@ window.addEventListener('load', init);
 
 //Global VARS
 let apiUrl = 'http://localhost/THE03.Magazine/webservice';
-let favouriteBTN;
 let favourites = JSON.parse(localStorage.getItem('favourites')) || [];
+let titleModal;
 let button;
 let zeldaGallery;
 let detailModal;
@@ -79,7 +79,7 @@ function createZeldaGallery(data) {
         for (let id of favourites) {
             //The following IF-statement only works with double == because of differing types of content
             if (id == zeldaData.id) {
-                zeldaCard.classList.add("fave");
+                zeldaCard.classList.add("favouriteCard");
                 faveButton.classList.add("favourite");
                 faveButton.innerHTML = "Favourited";
             } else {
@@ -132,13 +132,33 @@ function showModal(target) {
 
     detailModalContent.innerHTML = "";
     //Element for the name of the game (modal)
-    let title = document.createElement('h1');
+    let title= document.createElement('h1');
     title.innerHTML = zeldaData.name;
+    //Select random colour for modal title
+    let RNG = Math.floor(Math.random() * 10);
+    switch (true) {
+        case (RNG > 8):
+            title.classList.add("red");
+            break;
+        case (RNG > 6):
+            title.classList.add("blue");
+            break;
+        case (RNG > 4):
+            title.classList.add("green");
+            break;
+        case (RNG > 2):
+            title.classList.add("purple");
+            break;
+        default:
+            title.classList.add("yellow");
+            break;
+    }
     detailModalContent.appendChild(title);
 
     //Element for the image of the game (modal)
     let image = document.createElement('img');
-    if (zeldaData.id === 7) {
+    //Small easter egg if selected game is Zelda II
+    if (zeldaData.name === "The Legend of Zelda II") {
         image.src = zeldaData.image2;
         detailModalContent.appendChild(image);
     } else {
@@ -147,20 +167,20 @@ function showModal(target) {
     }
 
     //Element for the console(s) of the game (modal)
-    let title2 = document.createElement('h4')
+    let title2 = document.createElement('h3')
     title2.innerHTML = `Console(s): ${zeldaData.console.join(", ")}.`
     detailModalContent.appendChild(title2)
 
     //Element for the quote of the game (modal)
     let quote = document.createElement('h3')
-    quote.innerHTML = `" ${zeldaData.quote} "`;
+    quote.innerHTML = `"${zeldaData.quote}"`;
     detailModalContent.appendChild(quote)
 }
 
 //Add item to local storage
 function addFave(target) {
     target.classList.add("favourite");
-    target.parentElement.classList.add("favourite");
+    target.parentElement.classList.add("favouriteCard");
     target.innerHTML = "Favourited";
 
     favourites.push(target.dataset.id);
@@ -170,7 +190,7 @@ function addFave(target) {
 //Remove item from local storage
 function removeFave(target) {
     target.classList.remove("favourite");
-    target.parentElement.classList.remove("favourite");
+    target.parentElement.classList.remove("favouriteCard");
     target.innerHTML = "Add to favourites";
 
     let index = favourites.indexOf(target.dataset.id);

@@ -8,6 +8,11 @@
     src: url(../font/PixelEmulator.ttf);
 }
 
+@font-face {
+    font-family: DisposableDroidBB;
+    src: url(../font/DisposableDroidBB.ttf);
+}
+
 header {
     font-family: 'HyliaSerif', sans-serif;
     font-size: 4.5em;
@@ -49,6 +54,10 @@ body {
     transition: 0.3s;
 }
 
+.favouriteCard {
+    background-color: lightskyblue;
+}
+
 .zelda-card .favourite {
     background-color: cornflowerblue;
 }
@@ -71,11 +80,11 @@ body {
 }
 
 .zelda-card button {
-    font-family: 'HyliaSerif', sans-serif;
+    font-family: 'DisposableDroidBB', sans-serif;
     width: 100%;
     cursor: pointer;
     border: 0;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.5rem;
     margin-top: 0.5rem;
     background-color: mediumseagreen;
@@ -137,7 +146,6 @@ body {
 }
 
 .modal-content h1 {
-    color: red;
     font-size: 3em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke-width: 2px;
@@ -145,6 +153,7 @@ body {
 }
 
 .modal-content h3 {
+    font-family: 'DisposableDroidBB', sans-serif;
     width: 500px;
 }
 
@@ -177,4 +186,24 @@ body {
     margin: auto;
     padding-top: 30px;
     padding-left: 40px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
 }
