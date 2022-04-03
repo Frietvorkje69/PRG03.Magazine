@@ -3,8 +3,6 @@ window.addEventListener("load", init);
 //Global VARS
 let apiUrl = "http://localhost/THE03.Magazine/webservice";
 let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
-let titleModal;
-let button;
 let zeldaGallery;
 let detailModal;
 let detailModalContent;
@@ -12,7 +10,7 @@ let zeldaDatabase = {};
 
 //Starts the entire webpage
 function init() {
-    //Create Gallery
+    //Retrieve data and create gallery
     getZeldaData();
 
     //Retrieve the gallery element from the HTML
@@ -30,7 +28,7 @@ function getZeldaData() {
     ajaxRequest(apiUrl, createZeldaGallery)
 }
 
-//Handles all requests needed for the API
+//Handles all requests made to the API
 function ajaxRequest(url, successHandler) {
     fetch(url)
         .then((response) => {
