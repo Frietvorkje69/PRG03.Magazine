@@ -70,7 +70,7 @@ function createZeldaGallery(data) {
         zeldaCard.appendChild(description)
 
         //Favourite button for the Zelda Game
-        faveButton = document.createElement("BUTTON");
+        let faveButton = document.createElement("BUTTON");
         faveButton.innerHTML = "Add to favourites";
         faveButton.classList.add("favourite-btn")
         //Check if listed game is already added to favourites in local storage
@@ -134,6 +134,7 @@ function showModal(target) {
     title.innerHTML = zeldaData.name;
     //Select random colour for modal title
     let RNG = Math.floor(Math.random() * 10);
+    console.log(`RNG: ${RNG}`)
     switch (true) {
         case (RNG > 8):
             title.classList.add("red");
